@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-image:url(https://c4.wallpaperflare.com/wallpaper/636/402/366/lamborghini-aventador-lp700-4-4-red-ferrari-sports-car-wallpaper-preview.jpg);
+      background-size:cover;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    table {
+      width: 100%;
+    }
+
+    td {
+      padding: 10px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input[type="submit"] {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    td:first-child {
+      text-align: right;
+      font-weight: bold;
+    }
+
+    td:last-child {
+      text-align: left;
+    }
+
+  </style>
+</head>
+<body>
+<form action="/car-service-system/EditCarDetails">
+<h1>Edit Your Car Details</h1>
+    <table>
+      <tr>
+        <td>Car Model</td>
+        <td><input type="text" name="carmodel"></td>
+      </tr>
+      <tr>
+        <td>Car Type</td>
+        <td><input type="text" name="cartype"></td>
+      </tr>
+      <tr>
+        <td>Car Registration number</td>
+        <td><input type="text" name="carregnumber"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><input type="submit" value="Submit"></td>
+      </tr>
+    </table>
+  </form>
+
+</body>
+</html>
